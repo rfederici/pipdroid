@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/splash_frame"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_repeat"
+    android:gravity="center"
+    android:weightSum="1.0"
+    android:orientation="vertical" android:padding="20dip">
+
+    <ImageView
+        android:id="@+id/splash_image"
+        android:layout_width="wrap_content"
+        android:layout_height="0dip"
+        android:contentDescription="@string/splashDescription"
+        android:scaleType="centerInside"
+        android:layout_weight="0.9"
+        android:src="@drawable/vaultboy_splash" />
+
+    <TextView
+        android:id="@+id/splash_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="0dip"
+        android:text="@string/clickAnywhere"
+        android:textColor="#bbffbb"
+        android:textSize="32dip"
+        android:shadowColor="#000000"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="3" />
+
+</LinearLayout>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="right|center"
+    android:orientation="horizontal"
+    android:weightSum="0.8"
+    android:layout_gravity="center">
+
+        <LinearLayout
+        android:layout_width="0dip"
+        android:layout_height="fill_parent"
+        android:gravity="left|center"
+        android:layout_weight="0.15" >
+
+        <TextView
+            android:id="@+id/title_stats"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:shadowColor="#000000"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="10"
+            android:text="STATUS"
+            android:textColor="#aaffaa"
+            android:textSize="18dip"
+            android:gravity="center"/>
+
+            </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="0dip"
+        android:layout_height="fill_parent"
+        android:gravity="right|center"
+        android:layout_weight="0.25" >
+
+        <TextView
+            android:id="@+id/hp_stats"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:shadowColor="#000000"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="10"
+            android:text="HP: 120/120"
+            android:textColor="#aaffaa"
+            android:textSize="18dip" android:gravity="right|center"/>
+        
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:src="@drawable/top_right" android:layout_gravity="top"/>
+
+            </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dip"
+        android:layout_height="fill_parent"
+        android:gravity="right|center"
+        android:layout_weight="0.2" >
+
+        <TextView
+            android:id="@+id/ap_stats"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:shadowColor="#000000"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="10"
+            android:text="AP: 80/80"
+            android:textColor="#aaffaa"
+            android:textSize="18dip" android:gravity="right|center"/>
+        
+                <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:src="@drawable/top_right" android:layout_gravity="top"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dip"
+        android:layout_height="fill_parent"
+        android:gravity="right|center"
+        android:layout_weight="0.2" >
+
+        <TextView
+            android:id="@+id/bat_stats"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="right|center"
+            android:shadowColor="#000000"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="10"
+            android:text="Battery: ?? % "
+            android:textColor="#aaffaa"
+            android:textSize="18dip" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <string name="hello">Hello World, Splash!</string>
+    <string name="app_name">PipDroid 3000</string>
+    <string name="splashDescription">Splash image for PipDroid-3000</string>
+    <string name="clickAnywhere">Touch anywhere to begin!</string>
+    
+    <string name="stats">STATS</string>
+    <string name="items">ITEMS</string>
+    <string name="data">DATA</string>
+    
+    <string name="Strength">Strength</string>
+    <string name="Perception">Perception</string>
+    <string name="Endurance">Endurance</string>
+    <string name="Charisma">Charisma</string>
+    <string name="Intelligence">Intelligence</string>
+    <string name="Agility">Agility</string>
+    <string name="Luck">Luck</string>
+    <string name="remaining">Remaining:</string>
+    
+    <string name="Barter">Barter</string>
+    <string name="Big_Guns">Big Guns</string>
+    <string name="Energy_Weapons">Energy Weapons</string>
+    <string name="Explosives">Explosives</string>
+    <string name="Lockpick">Lockpick</string>
+    <string name="Medicine">Medicine</string>
+    <string name="Melee">Melee</string>
+    <string name="Repair">Repair</string>
+    <string name="Science">Science</string>
+    <string name="Small_Guns">Small Guns</string>
+    <string name="Sneak">Sneak</string>
+    <string name="Speech">Speech</string>
+    <string name="Unarmed">Unarmed</string>
+
+</resources>

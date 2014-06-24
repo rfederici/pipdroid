@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:weightSum="1.0"
+    android:layout_marginLeft="10dip"
+    android:layout_marginRight="10dip"
+    android:layout_gravity="center">
+
+    <LinearLayout
+        android:id="@+id/btn_weapons_box"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.2"
+        android:gravity="center"
+        android:padding="10dip" >
+
+        <TextView
+            android:id="@+id/btn_weapons"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:shadowColor="#000000"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="10"
+            android:text="Weapons"
+            android:textColor="#aaffaa"
+            android:textSize="18dip" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/btn_apparel_box"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.2"
+        android:gravity="center"
+        android:padding="10dip" >
+
+        <TextView
+            android:id="@+id/btn_apparel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:shadowColor="#000000"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="10"
+            android:text="Apparel"
+            android:textColor="#aaffaa"
+            android:textSize="18dip" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/btn_aid_box"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.2"
+        android:gravity="center"
+        android:padding="10dip" >
+
+        <TextView
+            android:id="@+id/btn_aid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:shadowColor="#000000"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="10"
+            android:text="Aid"
+            android:textColor="#aaffaa"
+            android:textSize="18dip" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/btn_misc_box"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.2"
+        android:gravity="center"
+        android:padding="10dip" >
+
+        <TextView
+            android:id="@+id/btn_misc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:shadowColor="#000000"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="10"
+            android:text="Misc"
+            android:textColor="#aaffaa"
+            android:textSize="18dip" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/btn_ammo_box"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.2"
+        android:gravity="center"
+        android:padding="10dip" >
+
+        <TextView
+            android:id="@+id/btn_ammo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:shadowColor="#000000"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="10"
+            android:text="Ammo"
+            android:textColor="#aaffaa"
+            android:textSize="18dip" />
+
+    </LinearLayout>
+
+</LinearLayout>

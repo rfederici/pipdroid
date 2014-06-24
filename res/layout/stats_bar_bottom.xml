@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:weightSum="1.0"
+    android:layout_marginLeft="10dip"
+    android:layout_marginRight="10dip"
+    android:layout_gravity="center">
+
+    <LinearLayout
+        android:id="@+id/btn_status_box"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dip"
+        android:layout_weight="0.2" >
+
+        <TextView
+            android:id="@+id/btn_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:shadowColor="#000000"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="10"
+            android:text="Status"
+            android:textColor="#aaffaa"
+            android:textSize="18dip" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/btn_special_box"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dip"
+        android:layout_weight="0.2" >
+
+        <TextView
+            android:id="@+id/btn_special"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:shadowColor="#000000"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="10"
+            android:text="SPECIAL"
+            android:textColor="#aaffaa"
+            android:textSize="18dip" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/btn_skills_box"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dip"
+        android:layout_weight="0.2" >
+
+        <TextView
+            android:id="@+id/btn_skills"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:shadowColor="#000000"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="10"
+            android:text="Skills"
+            android:textColor="#aaffaa"
+            android:textSize="18dip" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/btn_perks_box"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dip"
+        android:layout_weight="0.2" >
+
+        <TextView
+            android:id="@+id/btn_perks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:shadowColor="#000000"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="10"
+            android:text="Perks"
+            android:textColor="#aaffaa"
+            android:textSize="18dip" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/btn_general_box"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dip"
+        android:layout_weight="0.2" >
+
+        <TextView
+            android:id="@+id/btn_general"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:shadowColor="#000000"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="10"
+            android:text="General"
+            android:textColor="#aaffaa"
+            android:textSize="18dip" />
+    </LinearLayout>
+
+</LinearLayout>

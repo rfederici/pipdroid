@@ -1,0 +1,691 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal" android:gravity="center" android:background="@drawable/bg_repeat">
+
+	<RelativeLayout
+	    android:layout_width="225dip"
+	    android:layout_height="fill_parent"
+	    android:layout_marginLeft="20dip">
+	    
+	    <LinearLayout
+	        android:id="@+id/bottom_box"
+	        android:layout_width="225dip"
+	    	android:layout_height="50dip"
+	    	android:layout_alignParentBottom="true"
+	    	android:orientation="horizontal">
+
+	        <Button
+	            android:id="@+id/finished_skills"
+	            style="?android:attr/buttonStyleSmall"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginRight="5dip"
+	            android:text="Done" />
+	        
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="match_parent"
+	            android:text="Remaining: "
+	            android:textColor="#aaffaa"
+		        android:textSize="21dip" />
+	        
+	        <TextView
+	            android:id="@+id/remaining_skillpoints"
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:text="0"
+	            android:textColor="#aaffaa"
+		        android:textSize="21dip" />
+
+	    </LinearLayout>
+    
+		<ScrollView
+		    android:layout_width="225dip"
+	        android:layout_height="fill_parent"
+	        android:scrollbarStyle="insideOverlay"
+	        android:layout_above="@+id/bottom_box">
+	    <LinearLayout
+	        android:layout_width="225dip"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical">
+	        
+		        <!-- Barter  -->
+		
+		        <RelativeLayout
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_margin="5dip"
+		            android:orientation="horizontal">
+		
+			        <TextView
+		                android:id="@+id/text_barter"
+		                android:layout_width="fill_parent"
+		                android:layout_height="wrap_content"
+		                android:layout_alignParentLeft="true"
+		                android:text="@string/Barter"
+		                android:textColor="#aaffaa"
+		                android:textSize="21dip" />
+		
+		            <TextView
+		                android:id="@+id/barter_stat"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_toLeftOf="@+id/bart_inc"
+		                android:textColor="#aaffaa"
+		                android:textSize="21dip" android:layout_margin="0dip"/>
+		
+		            <ImageView
+		                android:id="@+id/bart_dec"
+		                android:layout_width="25dip"
+		                android:layout_height="25dip"
+		                android:layout_centerVertical="true"
+		                android:layout_toLeftOf="@+id/barter_stat"
+		                android:scaleType="fitCenter"
+		                android:src="@drawable/dec_arrow"
+		                android:layout_marginLeft="5dip"
+		                android:layout_marginRight="5dip"/>
+		            
+		            <ImageView
+		                android:id="@+id/bart_inc"
+		                android:layout_width="25dip"
+		                android:layout_height="25dip"
+		                android:layout_centerVertical="true"
+		                android:layout_alignParentRight="true"
+		                android:scaleType="fitCenter"
+		                android:src="@drawable/inc_arrow"
+		                android:layout_marginRight="5dip"/>
+	            
+		        </RelativeLayout>
+		        
+		        <!-- Big guns -->
+		        
+				<RelativeLayout
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_margin="5dip"
+		            android:orientation="horizontal">
+		
+			        <TextView
+		                android:id="@+id/text_big_guns"
+		                android:layout_width="fill_parent"
+		                android:layout_height="wrap_content"
+		                android:layout_alignParentLeft="true"
+		                android:text="@string/Big_Guns"
+		                android:textColor="#aaffaa"
+		                android:textSize="21dip" />
+		
+		            <TextView
+		                android:id="@+id/big_guns_stat"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_toLeftOf="@+id/bgns_inc"
+		                android:textColor="#aaffaa"
+		                android:textSize="21dip" android:layout_margin="0dip"/>
+		
+		            <ImageView
+		                android:id="@+id/bgns_dec"
+		                android:layout_width="25dip"
+		                android:layout_height="25dip"
+		                android:layout_centerVertical="true"
+		                android:layout_toLeftOf="@+id/big_guns_stat"
+		                android:scaleType="fitCenter"
+		                android:src="@drawable/dec_arrow"
+		                android:layout_marginLeft="5dip"
+		                android:layout_marginRight="5dip"/>
+		            
+		            <ImageView
+		                android:id="@+id/bgns_inc"
+		                android:layout_width="25dip"
+		                android:layout_height="25dip"
+		                android:layout_centerVertical="true"
+		                android:layout_alignParentRight="true"
+		                android:scaleType="fitCenter"
+		                android:src="@drawable/inc_arrow"
+		                android:layout_marginRight="5dip"/>
+	            
+		        </RelativeLayout>
+		        
+				<!-- Energy Weapons -->
+		        
+				<RelativeLayout
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_margin="5dip"
+		            android:orientation="horizontal">
+		
+			        <TextView
+		                android:id="@+id/text_energy_weapons"
+		                android:layout_width="fill_parent"
+		                android:layout_height="wrap_content"
+		                android:layout_alignParentLeft="true"
+		                android:text="@string/Energy_Weapons"
+		                android:textColor="#aaffaa"
+		                android:textSize="21dip" />
+		
+		            <TextView
+		                android:id="@+id/energy_weapons_stat"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_toLeftOf="@+id/nrg_inc"
+		                android:textColor="#aaffaa"
+		                android:textSize="21dip" android:layout_margin="0dip"/>
+		
+		            <ImageView
+		                android:id="@+id/nrg_dec"
+		                android:layout_width="25dip"
+		                android:layout_height="25dip"
+		                android:layout_centerVertical="true"
+		                android:layout_toLeftOf="@+id/energy_weapons_stat"
+		                android:scaleType="fitCenter"
+		                android:src="@drawable/dec_arrow"
+		                android:layout_marginLeft="5dip"
+		                android:layout_marginRight="5dip"/>
+		            
+		            <ImageView
+		                android:id="@+id/nrg_inc"
+		                android:layout_width="25dip"
+		                android:layout_height="25dip"
+		                android:layout_centerVertical="true"
+		                android:layout_alignParentRight="true"
+		                android:scaleType="fitCenter"
+		                android:src="@drawable/inc_arrow"
+		                android:layout_marginRight="5dip"/>
+	            
+		        </RelativeLayout>
+		        
+				<!-- Explosives -->
+		        
+				<RelativeLayout
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_margin="5dip"
+		            android:orientation="horizontal">
+		
+			        <TextView
+		                android:id="@+id/text_explosives"
+		                android:layout_width="fill_parent"
+		                android:layout_height="wrap_content"
+		                android:layout_alignParentLeft="true"
+		                android:text="@string/Explosives"
+		                android:textColor="#aaffaa"
+		                android:textSize="21dip" />
+		
+		            <TextView
+		                android:id="@+id/explosives_stat"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_toLeftOf="@+id/expl_inc"
+		                android:textColor="#aaffaa"
+		                android:textSize="21dip" android:layout_margin="0dip"/>
+		
+		            <ImageView
+		                android:id="@+id/expl_dec"
+		                android:layout_width="25dip"
+		                android:layout_height="25dip"
+		                android:layout_centerVertical="true"
+		                android:layout_toLeftOf="@+id/explosives_stat"
+		                android:scaleType="fitCenter"
+		                android:src="@drawable/dec_arrow"
+		                android:layout_marginLeft="5dip"
+		                android:layout_marginRight="5dip"/>
+		            
+		            <ImageView
+		                android:id="@+id/expl_inc"
+		                android:layout_width="25dip"
+		                android:layout_height="25dip"
+		                android:layout_centerVertical="true"
+		                android:layout_alignParentRight="true"
+		                android:scaleType="fitCenter"
+		                android:src="@drawable/inc_arrow"
+		                android:layout_marginRight="5dip"/>
+	            
+		        </RelativeLayout>
+		        
+				<!-- Lockpick -->
+		        
+				<RelativeLayout
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_margin="5dip"
+		            android:orientation="horizontal">
+		
+			        <TextView
+		                android:id="@+id/text_lockpick"
+		                android:layout_width="fill_parent"
+		                android:layout_height="wrap_content"
+		                android:layout_alignParentLeft="true"
+		                android:text="@string/Lockpick"
+		                android:textColor="#aaffaa"
+		                android:textSize="21dip" />
+		
+		            <TextView
+		                android:id="@+id/lockpick_stat"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_toLeftOf="@+id/lock_inc"
+		                android:textColor="#aaffaa"
+		                android:textSize="21dip" android:layout_margin="0dip"/>
+		
+		            <ImageView
+		                android:id="@+id/lock_dec"
+		                android:layout_width="25dip"
+		                android:layout_height="25dip"
+		                android:layout_centerVertical="true"
+		                android:layout_toLeftOf="@+id/lockpick_stat"
+		                android:scaleType="fitCenter"
+		                android:src="@drawable/dec_arrow"
+		                android:layout_marginLeft="5dip"
+		                android:layout_marginRight="5dip"/>
+		            
+		            <ImageView
+		                android:id="@+id/lock_inc"
+		                android:layout_width="25dip"
+		                android:layout_height="25dip"
+		                android:layout_centerVertical="true"
+		                android:layout_alignParentRight="true"
+		                android:scaleType="fitCenter"
+		                android:src="@drawable/inc_arrow"
+		                android:layout_marginRight="5dip"/>
+	            
+		        </RelativeLayout>
+		        
+				<!-- Medicine -->
+		        
+				<RelativeLayout
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_margin="5dip"
+		            android:orientation="horizontal">
+		
+			        <TextView
+		                android:id="@+id/text_medicine"
+		                android:layout_width="fill_parent"
+		                android:layout_height="wrap_content"
+		                android:layout_alignParentLeft="true"
+		                android:text="@string/Medicine"
+		                android:textColor="#aaffaa"
+		                android:textSize="21dip" />
+		
+		            <TextView
+		                android:id="@+id/medicine_stat"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_toLeftOf="@+id/medi_inc"
+		                android:textColor="#aaffaa"
+		                android:textSize="21dip" android:layout_margin="0dip"/>
+		
+		            <ImageView
+		                android:id="@+id/medi_dec"
+		                android:layout_width="25dip"
+		                android:layout_height="25dip"
+		                android:layout_centerVertical="true"
+		                android:layout_toLeftOf="@+id/medicine_stat"
+		                android:scaleType="fitCenter"
+		                android:src="@drawable/dec_arrow"
+		                android:layout_marginLeft="5dip"
+		                android:layout_marginRight="5dip"/>
+		            
+		            <ImageView
+		                android:id="@+id/medi_inc"
+		                android:layout_width="25dip"
+		                android:layout_height="25dip"
+		                android:layout_centerVertical="true"
+		                android:layout_alignParentRight="true"
+		                android:scaleType="fitCenter"
+		                android:src="@drawable/inc_arrow"
+		                android:layout_marginRight="5dip"/>
+	            
+		        </RelativeLayout>
+		        
+				<!-- Melee -->
+				
+				<RelativeLayout
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_margin="5dip"
+		            android:orientation="horizontal">
+		
+			        <TextView
+		                android:id="@+id/text_melee"
+		                android:layout_width="fill_parent"
+		                android:layout_height="wrap_content"
+		                android:layout_alignParentLeft="true"
+		                android:text="@string/Melee"
+		                android:textColor="#aaffaa"
+		                android:textSize="21dip" />
+		
+		            <TextView
+		                android:id="@+id/melee_stat"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_toLeftOf="@+id/mlee_inc"
+		                android:textColor="#aaffaa"
+		                android:textSize="21dip" android:layout_margin="0dip"/>
+		
+		            <ImageView
+		                android:id="@+id/mlee_dec"
+		                android:layout_width="25dip"
+		                android:layout_height="25dip"
+		                android:layout_centerVertical="true"
+		                android:layout_toLeftOf="@+id/melee_stat"
+		                android:scaleType="fitCenter"
+		                android:src="@drawable/dec_arrow"
+		                android:layout_marginLeft="5dip"
+		                android:layout_marginRight="5dip"/>
+		            
+		            <ImageView
+		                android:id="@+id/mlee_inc"
+		                android:layout_width="25dip"
+		                android:layout_height="25dip"
+		                android:layout_centerVertical="true"
+		                android:layout_alignParentRight="true"
+		                android:scaleType="fitCenter"
+		                android:src="@drawable/inc_arrow"
+		                android:layout_marginRight="5dip"/>
+	            
+		        </RelativeLayout>
+		        
+				<!-- Repair -->
+				
+				<RelativeLayout
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_margin="5dip"
+		            android:orientation="horizontal">
+		
+			        <TextView
+		                android:id="@+id/text_repair"
+		                android:layout_width="fill_parent"
+		                android:layout_height="wrap_content"
+		                android:layout_alignParentLeft="true"
+		                android:text="@string/Repair"
+		                android:textColor="#aaffaa"
+		                android:textSize="21dip" />
+		
+		            <TextView
+		                android:id="@+id/repair_stat"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_toLeftOf="@+id/rpar_inc"
+		                android:textColor="#aaffaa"
+		                android:textSize="21dip" android:layout_margin="0dip"/>
+		
+		            <ImageView
+		                android:id="@+id/rpar_dec"
+		                android:layout_width="25dip"
+		                android:layout_height="25dip"
+		                android:layout_centerVertical="true"
+		                android:layout_toLeftOf="@+id/repair_stat"
+		                android:scaleType="fitCenter"
+		                android:src="@drawable/dec_arrow"
+		                android:layout_marginLeft="5dip"
+		                android:layout_marginRight="5dip"/>
+		            
+		            <ImageView
+		                android:id="@+id/rpar_inc"
+		                android:layout_width="25dip"
+		                android:layout_height="25dip"
+		                android:layout_centerVertical="true"
+		                android:layout_alignParentRight="true"
+		                android:scaleType="fitCenter"
+		                android:src="@drawable/inc_arrow"
+		                android:layout_marginRight="5dip"/>
+	            
+		        </RelativeLayout>
+		        
+				<!-- Science -->
+				
+				<RelativeLayout
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_margin="5dip"
+		            android:orientation="horizontal">
+		
+			        <TextView
+		                android:id="@+id/text_science"
+		                android:layout_width="fill_parent"
+		                android:layout_height="wrap_content"
+		                android:layout_alignParentLeft="true"
+		                android:text="@string/Science"
+		                android:textColor="#aaffaa"
+		                android:textSize="21dip" />
+		
+		            <TextView
+		                android:id="@+id/science_stat"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_toLeftOf="@+id/sci_inc"
+		                android:textColor="#aaffaa"
+		                android:textSize="21dip" android:layout_margin="0dip"/>
+		
+		            <ImageView
+		                android:id="@+id/sci_dec"
+		                android:layout_width="25dip"
+		                android:layout_height="25dip"
+		                android:layout_centerVertical="true"
+		                android:layout_toLeftOf="@+id/science_stat"
+		                android:scaleType="fitCenter"
+		                android:src="@drawable/dec_arrow"
+		                android:layout_marginLeft="5dip"
+		                android:layout_marginRight="5dip"/>
+		            
+		            <ImageView
+		                android:id="@+id/sci_inc"
+		                android:layout_width="25dip"
+		                android:layout_height="25dip"
+		                android:layout_centerVertical="true"
+		                android:layout_alignParentRight="true"
+		                android:scaleType="fitCenter"
+		                android:src="@drawable/inc_arrow"
+		                android:layout_marginRight="5dip"/>
+	            
+		        </RelativeLayout>
+		        
+				<!-- Small Guns -->
+				
+				<RelativeLayout
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_margin="5dip"
+		            android:orientation="horizontal">
+		
+			        <TextView
+		                android:id="@+id/text_small_guns"
+		                android:layout_width="fill_parent"
+		                android:layout_height="wrap_content"
+		                android:layout_alignParentLeft="true"
+		                android:text="@string/Small_Guns"
+		                android:textColor="#aaffaa"
+		                android:textSize="21dip" />
+		
+		            <TextView
+		                android:id="@+id/small_guns_stat"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_toLeftOf="@+id/sgns_inc"
+		                android:textColor="#aaffaa"
+		                android:textSize="21dip" android:layout_margin="0dip"/>
+		
+		            <ImageView
+		                android:id="@+id/sgns_dec"
+		                android:layout_width="25dip"
+		                android:layout_height="25dip"
+		                android:layout_centerVertical="true"
+		                android:layout_toLeftOf="@+id/small_guns_stat"
+		                android:scaleType="fitCenter"
+		                android:src="@drawable/dec_arrow"
+		                android:layout_marginLeft="5dip"
+		                android:layout_marginRight="5dip"/>
+		            
+		            <ImageView
+		                android:id="@+id/sgns_inc"
+		                android:layout_width="25dip"
+		                android:layout_height="25dip"
+		                android:layout_centerVertical="true"
+		                android:layout_alignParentRight="true"
+		                android:scaleType="fitCenter"
+		                android:src="@drawable/inc_arrow"
+		                android:layout_marginRight="5dip"/>
+	            
+		        </RelativeLayout>
+		        
+				<!-- Sneak -->
+				
+				<RelativeLayout
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_margin="5dip"
+		            android:orientation="horizontal">
+		
+			        <TextView
+		                android:id="@+id/text_sneak"
+		                android:layout_width="fill_parent"
+		                android:layout_height="wrap_content"
+		                android:layout_alignParentLeft="true"
+		                android:text="@string/Sneak"
+		                android:textColor="#aaffaa"
+		                android:textSize="21dip" />
+		
+		            <TextView
+		                android:id="@+id/sneak_stat"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_toLeftOf="@+id/snek_inc"
+		                android:textColor="#aaffaa"
+		                android:textSize="21dip" android:layout_margin="0dip"/>
+		
+		            <ImageView
+		                android:id="@+id/snek_dec"
+		                android:layout_width="25dip"
+		                android:layout_height="25dip"
+		                android:layout_centerVertical="true"
+		                android:layout_toLeftOf="@+id/sneak_stat"
+		                android:scaleType="fitCenter"
+		                android:src="@drawable/dec_arrow"
+		                android:layout_marginLeft="5dip"
+		                android:layout_marginRight="5dip"/>
+		            
+		            <ImageView
+		                android:id="@+id/snek_inc"
+		                android:layout_width="25dip"
+		                android:layout_height="25dip"
+		                android:layout_centerVertical="true"
+		                android:layout_alignParentRight="true"
+		                android:scaleType="fitCenter"
+		                android:src="@drawable/inc_arrow"
+		                android:layout_marginRight="5dip"/>
+	            
+		        </RelativeLayout>
+		        
+				<!-- Speech -->
+				
+				<RelativeLayout
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_margin="5dip"
+		            android:orientation="horizontal">
+		
+			        <TextView
+		                android:id="@+id/text_speech"
+		                android:layout_width="fill_parent"
+		                android:layout_height="wrap_content"
+		                android:layout_alignParentLeft="true"
+		                android:text="@string/Speech"
+		                android:textColor="#aaffaa"
+		                android:textSize="21dip" />
+		
+		            <TextView
+		                android:id="@+id/speech_stat"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_toLeftOf="@+id/spch_inc"
+		                android:textColor="#aaffaa"
+		                android:textSize="21dip" android:layout_margin="0dip"/>
+		
+		            <ImageView
+		                android:id="@+id/spch_dec"
+		                android:layout_width="25dip"
+		                android:layout_height="25dip"
+		                android:layout_centerVertical="true"
+		                android:layout_toLeftOf="@+id/speech_stat"
+		                android:scaleType="fitCenter"
+		                android:src="@drawable/dec_arrow"
+		                android:layout_marginLeft="5dip"
+		                android:layout_marginRight="5dip"/>
+		            
+		            <ImageView
+		                android:id="@+id/spch_inc"
+		                android:layout_width="25dip"
+		                android:layout_height="25dip"
+		                android:layout_centerVertical="true"
+		                android:layout_alignParentRight="true"
+		                android:scaleType="fitCenter"
+		                android:src="@drawable/inc_arrow"
+		                android:layout_marginRight="5dip"/>
+	            
+		        </RelativeLayout>
+		        
+				<!-- Unarmed -->
+				
+				<RelativeLayout
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_margin="5dip"
+		            android:orientation="horizontal">
+		
+			        <TextView
+		                android:id="@+id/text_unarmed"
+		                android:layout_width="fill_parent"
+		                android:layout_height="wrap_content"
+		                android:layout_alignParentLeft="true"
+		                android:text="@string/Unarmed"
+		                android:textColor="#aaffaa"
+		                android:textSize="21dip" />
+		
+		            <TextView
+		                android:id="@+id/unarmed_stat"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_toLeftOf="@+id/uarm_inc"
+		                android:textColor="#aaffaa"
+		                android:textSize="21dip" android:layout_margin="0dip"/>
+		
+		            <ImageView
+		                android:id="@+id/uarm_dec"
+		                android:layout_width="25dip"
+		                android:layout_height="25dip"
+		                android:layout_centerVertical="true"
+		                android:layout_toLeftOf="@+id/unarmed_stat"
+		                android:scaleType="fitCenter"
+		                android:src="@drawable/dec_arrow"
+		                android:layout_marginLeft="5dip"
+		                android:layout_marginRight="5dip"/>
+		            
+		            <ImageView
+		                android:id="@+id/uarm_inc"
+		                android:layout_width="25dip"
+		                android:layout_height="25dip"
+		                android:layout_centerVertical="true"
+		                android:layout_alignParentRight="true"
+		                android:scaleType="fitCenter"
+		                android:src="@drawable/inc_arrow"
+		                android:layout_marginRight="5dip"/>
+	            
+		        </RelativeLayout>
+	        
+	    </LinearLayout>
+	    </ScrollView>
+
+	</RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/set_skills_image"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="5dip"
+        android:src="@drawable/strength" />
+
+</LinearLayout>

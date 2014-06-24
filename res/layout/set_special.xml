@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_repeat"
+    android:gravity="center"
+    android:orientation="horizontal" xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="200dip"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="20dip"
+        android:orientation="vertical" android:layout_marginTop="10dip">
+
+        <!-- Strength  -->
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/text_strength"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="@string/Strength"
+                android:textColor="#aaffaa"
+                android:textSize="21dip" />
+
+            <TextView
+                android:id="@+id/strength_stat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/str_inc"
+                android:textColor="#aaffaa"
+                android:textSize="21dip" android:layout_margin="0dip"/>
+
+            <ImageView
+                android:id="@+id/str_dec"
+                android:layout_width="25dip"
+                android:layout_height="25dip"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/strength_stat"
+                android:scaleType="fitCenter"
+                android:src="@drawable/dec_arrow"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="5dip"/>
+            
+            <ImageView
+                android:id="@+id/str_inc"
+                android:layout_width="25dip"
+                android:layout_height="25dip"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/inc_arrow"
+                android:layout_marginRight="5dip"/>
+        </RelativeLayout>
+        
+        <!-- Perception -->
+        
+		<RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dip"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/text_perception"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="@string/Perception"
+                android:textColor="#aaffaa"
+                android:textSize="21dip"/>
+
+            <TextView
+                android:id="@+id/perception_stat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/per_inc"
+                android:textColor="#aaffaa"
+                android:textSize="21dip"/>
+            
+            <ImageView
+                android:id="@+id/per_dec"
+                android:layout_width="25dip"
+                android:layout_height="25dip"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/perception_stat"
+                android:scaleType="fitCenter"
+                android:src="@drawable/dec_arrow"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="5dip"/>
+            
+            <ImageView
+                android:id="@+id/per_inc"
+                android:layout_width="25dip"
+                android:layout_height="25dip"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/inc_arrow"
+                android:layout_marginRight="5dip"/>
+            
+        </RelativeLayout>
+        
+		<!-- Endurance -->
+        
+		<RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dip"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/text_endurance"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="@string/Endurance"
+                android:textColor="#aaffaa"
+                android:textSize="21dip"/>
+
+            <TextView
+                android:id="@+id/endurance_stat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/end_inc"
+                android:textColor="#aaffaa"
+                android:textSize="21dip"/>
+            
+            <ImageView
+                android:id="@+id/end_dec"
+                android:layout_width="25dip"
+                android:layout_height="25dip"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/endurance_stat"
+                android:scaleType="fitCenter"
+                android:src="@drawable/dec_arrow"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="5dip"/>
+            
+            <ImageView
+                android:id="@+id/end_inc"
+                android:layout_width="25dip"
+                android:layout_height="25dip"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/inc_arrow"
+                android:layout_marginRight="5dip"/>
+            
+        </RelativeLayout>
+        
+		<!-- Charisma -->
+        
+		<RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dip"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/text_charisma"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="@string/Charisma"
+                android:textColor="#aaffaa"
+                android:textSize="21dip"/>
+
+            <TextView
+                android:id="@+id/charisma_stat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/chr_inc"
+                android:textColor="#aaffaa"
+                android:textSize="21dip"/>
+            
+            <ImageView
+                android:id="@+id/chr_dec"
+                android:layout_width="25dip"
+                android:layout_height="25dip"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/charisma_stat"
+                android:scaleType="fitCenter"
+                android:src="@drawable/dec_arrow"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="5dip"/>
+            
+           <ImageView
+                android:id="@+id/chr_inc"
+                android:layout_width="25dip"
+                android:layout_height="25dip"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/inc_arrow" android:layout_marginLeft="5dip"/>
+        </RelativeLayout>
+        
+		<!-- Intelligence -->
+        
+		<RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dip"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/text_intelligence"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@+id/intelligence_stat"
+                android:text="@string/Intelligence"
+                android:textColor="#aaffaa"
+                android:textSize="21dip"/>
+
+            <TextView
+                android:id="@+id/intelligence_stat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/int_inc"
+                android:textColor="#aaffaa"
+                android:textSize="21dip"/>
+            
+            <ImageView
+                android:id="@+id/int_dec"
+                android:layout_width="25dip"
+                android:layout_height="25dip"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/intelligence_stat"
+                android:scaleType="fitCenter"
+                android:src="@drawable/dec_arrow"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="5dip"/>
+            
+            <ImageView
+                android:id="@+id/int_inc"
+                android:layout_width="25dip"
+                android:layout_height="25dip"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/inc_arrow"
+                android:layout_marginLeft="5dip"/>
+        </RelativeLayout>
+        
+		<!-- Agility -->
+        
+		<RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dip"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/text_agility"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@+id/agility_stat"
+                android:text="@string/Agility"
+                android:textColor="#aaffaa"
+                android:textSize="21dip"/>
+
+            <TextView
+                android:id="@+id/agility_stat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                 android:layout_toLeftOf="@+id/agi_inc"
+                android:textColor="#aaffaa"
+                android:textSize="21dip"/>
+            
+            <ImageView
+                android:id="@+id/agi_dec"
+                android:layout_width="25dip"
+                android:layout_height="25dip"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/agility_stat"
+                android:scaleType="fitCenter"
+                android:src="@drawable/dec_arrow"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="5dip"/>
+            
+            <ImageView
+                android:id="@+id/agi_inc"
+                android:layout_width="25dip"
+                android:layout_height="25dip"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/inc_arrow"
+                android:layout_marginLeft="5dip"/>
+        </RelativeLayout>
+        
+		<!-- Luck -->
+		
+		<RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dip"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/text_luck"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@+id/luck_stat"
+                android:text="@string/Luck"
+                android:textColor="#aaffaa"
+                android:textSize="21dip"/>
+
+            <TextView
+                android:id="@+id/luck_stat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/luk_inc"
+                android:textColor="#aaffaa"
+                android:textSize="21dip"/>
+            
+            <ImageView
+                android:id="@+id/luk_dec"
+                android:layout_width="25dip"
+                android:layout_height="25dip"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/luck_stat"
+                android:scaleType="fitCenter"
+                android:src="@drawable/dec_arrow"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="5dip"/>
+            
+             <ImageView
+                android:id="@+id/luk_inc"
+                android:layout_width="25dip"
+                android:layout_height="25dip"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/inc_arrow"
+                android:layout_marginLeft="5dip"/>
+        </RelativeLayout>
+		<LinearLayout
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal" android:layout_marginTop="5dip">
+
+			<Button
+			    android:id="@+id/finished"
+			    style="?android:attr/buttonStyleSmall"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:text="Finished" />
+		
+		            <TextView
+                android:id="@+id/text_remaining"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/remaining"
+                android:textColor="#aaffaa"
+                android:textSize="18dip" android:layout_marginLeft="5dip"/>
+		            
+		            <TextView
+                android:id="@+id/remaining_stats"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textColor="#aaffaa"
+                android:textSize="21dip" android:layout_margin="0dip" android:gravity="center"/>
+		
+		</LinearLayout>
+        
+    </LinearLayout><ImageView
+        android:id="@+id/set_special_image"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="top"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:src="@drawable/barter" />
+
+</LinearLayout>

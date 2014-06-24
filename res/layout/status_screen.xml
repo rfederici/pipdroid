@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/status_left"
+        android:layout_width="80dip"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dip"
+        android:orientation="vertical">
+        
+        <TextView
+            android:id="@+id/btn_cnd"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18dip"
+            android:textColor="#99ff99"
+            android:layout_marginTop="10dip"
+            android:text="CND"
+            android:gravity="center"/>
+        
+        <TextView
+            android:id="@+id/btn_rad"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18dip"
+            android:textColor="#99ff99"
+            android:layout_marginTop="10dip"
+            android:text="RAD"
+            android:gravity="center"/>
+        
+        </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/status_right"
+        android:layout_width="80dip"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dip"
+        android:orientation="vertical">
+        
+                <TextView
+            android:id="@+id/btn_stimpak"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18dip"
+            android:textColor="#99ff99"
+            android:layout_marginTop="10dip"
+            android:text="Stimpak"
+			android:gravity="center"/>
+                
+                <TextView
+            android:id="@+id/btn_flashlight"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18dip"
+            android:textColor="#99ff99"
+            android:layout_marginTop="10dip"
+            android:text="Flashlight"
+			android:gravity="center"/>
+                
+                </LinearLayout>
+
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_toLeftOf="@+id/status_right"
+        android:layout_toRightOf="@+id/status_left"
+        android:src="@drawable/status_good" />
+
+</RelativeLayout>

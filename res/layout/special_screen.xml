@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal" android:gravity="center">
+    <LinearLayout
+        android:layout_width="180dip"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="20dip"
+        android:orientation="vertical" >
+
+        <!-- Strength  -->
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dip"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/text_strength"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@+id/strength_stat"
+                android:text="@string/Strength"
+                android:textColor="#aaffaa"
+                android:textSize="24dip"/>
+
+            <TextView
+                android:id="@+id/strength_stat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="0"
+                android:textColor="#aaffaa"
+                android:textSize="24dip"/>
+        </RelativeLayout>
+        
+        <!-- Perception -->
+        
+		<RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dip"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/text_perception"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@+id/perception_stat"
+                android:text="@string/Perception"
+                android:textColor="#aaffaa"
+                android:textSize="24dip"/>
+
+            <TextView
+                android:id="@+id/perception_stat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="0"
+                android:textColor="#aaffaa"
+                android:textSize="24dip"/>
+        </RelativeLayout>
+        
+		<!-- Endurance -->
+        
+		<RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dip"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/text_endurance"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@+id/endurance_stat"
+                android:text="@string/Endurance"
+                android:textColor="#aaffaa"
+                android:textSize="24dip"/>
+
+            <TextView
+                android:id="@+id/endurance_stat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="0"
+                android:textColor="#aaffaa"
+                android:textSize="24dip"/>
+        </RelativeLayout>
+        
+		<!-- Charisma -->
+        
+		<RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dip"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/text_charisma"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@+id/charisma_stat"
+                android:text="@string/Charisma"
+                android:textColor="#aaffaa"
+                android:textSize="24dip"/>
+
+            <TextView
+                android:id="@+id/charisma_stat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="0"
+                android:textColor="#aaffaa"
+                android:textSize="24dip"/>
+        </RelativeLayout>
+        
+		<!-- Intelligence -->
+        
+		<RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dip"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/text_intelligence"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@+id/intelligence_stat"
+                android:text="@string/Intelligence"
+                android:textColor="#aaffaa"
+                android:textSize="24dip"/>
+
+            <TextView
+                android:id="@+id/intelligence_stat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="0"
+                android:textColor="#aaffaa"
+                android:textSize="24dip"/>
+        </RelativeLayout>
+        
+		<!-- Agility -->
+        
+		<RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dip"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/text_agility"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@+id/agility_stat"
+                android:text="@string/Agility"
+                android:textColor="#aaffaa"
+                android:textSize="24dip"/>
+
+            <TextView
+                android:id="@+id/agility_stat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="0"
+                android:textColor="#aaffaa"
+                android:textSize="24dip"/>
+        </RelativeLayout>
+        
+		<!-- Luck -->
+		
+		<RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dip"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/text_luck"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@+id/luck_stat"
+                android:text="@string/Luck"
+                android:textColor="#aaffaa"
+                android:textSize="24dip"/>
+
+            <TextView
+                android:id="@+id/luck_stat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="0"
+                android:textColor="#aaffaa"
+                android:textSize="24dip"/>
+        </RelativeLayout>
+        
+    </LinearLayout>
+    
+    <ImageView
+        android:id="@+id/special_image"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="5dip"
+        android:src="@drawable/strength" />
+
+</LinearLayout>
